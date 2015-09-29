@@ -1,0 +1,14 @@
+C:\Users\Fabio\Documents\Avateering-XNA\SkinnedModelPipeline\bin\x86\Debug\SkinnedModelPipeline.dll
+C:\Users\Fabio\Documents\Avateering-XNA\SkinnedModelPipeline\bin\x86\Debug\SkinnedModelPipeline.pdb
+C:\Users\Fabio\Documents\Avateering-XNA\SkinnedModelPipeline\bin\x86\Debug\SkinnedModel.dll
+C:\Users\Fabio\Documents\Avateering-XNA\SkinnedModelPipeline\bin\x86\Debug\SkinnedModel.pdb
+C:\Users\Fabio\Documents\Avateering-XNA\SkinnedModelPipeline\obj\x86\Debug\SkinnedModelPipeline.csprojResolveAssemblyReference.cache
+C:\Users\Fabio\Documents\Avateering-XNA\SkinnedModelPipeline\obj\x86\Debug\SkinnedModelPipeline.dll
+C:\Users\Fabio\Documents\Avateering-XNA\SkinnedModelPipeline\obj\x86\Debug\SkinnedModelPipeline.pdb
+C:\Users\school\Desktop\Avateering-XNA\SkinnedModelPipeline\bin\x86\Debug\SkinnedModelPipeline.dll
+C:\Users\school\Desktop\Avateering-XNA\SkinnedModelPipeline\bin\x86\Debug\SkinnedModelPipeline.pdb
+C:\Users\school\Desktop\Avateering-XNA\SkinnedModelPipeline\bin\x86\Debug\SkinnedModel.dll
+C:\Users\school\Desktop\Avateering-XNA\SkinnedModelPipeline\bin\x86\Debug\SkinnedModel.pdb
+C:\Users\school\Desktop\Avateering-XNA\SkinnedModelPipeline\obj\x86\Debug\SkinnedModelPipeline.csprojResolveAssemblyReference.cache
+C:\Users\school\Desktop\Avateering-XNA\SkinnedModelPipeline\obj\x86\Debug\SkinnedModelPipeline.dll
+C:\Users\school\Desktop\Avateering-XNA\SkinnedModelPipeline\obj\x86\Debug\SkinnedModelPipeline.pdb

@@ -1,0 +1,11 @@
+C:\Users\Fabio\Documents\Avateering-XNA\SkinnedModel\bin\Xbox 360\Debug\SkinnedModel.dll
+C:\Users\Fabio\Documents\Avateering-XNA\SkinnedModel\bin\Xbox 360\Debug\SkinnedModel.pdb
+C:\Users\Fabio\Documents\Avateering-XNA\SkinnedModel\obj\Xbox 360\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Fabio\Documents\Avateering-XNA\SkinnedModel\obj\Xbox 360\Debug\SkinnedModel.dll
+C:\Users\Fabio\Documents\Avateering-XNA\SkinnedModel\obj\Xbox 360\Debug\SkinnedModel.pdb
+C:\Users\school\Desktop\Avateering-XNA\SkinnedModel\bin\Xbox 360\Debug\SkinnedModel.dll
+C:\Users\school\Desktop\Avateering-XNA\SkinnedModel\bin\Xbox 360\Debug\SkinnedModel.pdb
+C:\Users\school\Desktop\Avateering-XNA\SkinnedModel\obj\Xbox 360\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\school\Desktop\Avateering-XNA\SkinnedModel\obj\Xbox 360\Debug\SkinnedModel.dll
+C:\Users\school\Desktop\Avateering-XNA\SkinnedModel\obj\Xbox 360\Debug\SkinnedModel.pdb
+C:\Users\school\Desktop\Avateering-XNA\SkinnedModel\obj\Xbox 360\Debug\SkinnedModelWindows.csprojResolveAssemblyReference.cache

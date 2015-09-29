@@ -1,0 +1,2 @@
+C:\Users\Fabio\Documents\Avateering-XNA\Avateering\Content\obj\x86\Debug\AvateeringContent.contentprojResolveAssemblyReference.cache
+C:\Users\school\Desktop\Avateering-XNA\Avateering\Content\obj\x86\Debug\AvateeringContent.contentprojResolveAssemblyReference.cache

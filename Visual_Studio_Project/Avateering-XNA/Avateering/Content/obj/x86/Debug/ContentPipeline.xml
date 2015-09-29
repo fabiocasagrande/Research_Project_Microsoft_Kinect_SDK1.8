@@ -1,0 +1,992 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Framework="Microsoft.Xna.Framework" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>dude.fbx</Source>
+      <Name>dude</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\dude.xnb</Output>
+      <Time>2013-09-11T16:17:38-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\dude_0.xml</Key>
+        <Value>2015-04-22T20:21:58.4139661-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\head_0.xnb</Request>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\jacket_0.xnb</Request>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\pants_0.xnb</Request>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\upBodyC_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>dude1.fbx</Source>
+      <Name>dude1</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\dude1.xnb</Output>
+      <Time>2014-12-09T13:18:06.8080606-05:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\dude1_0.xml</Key>
+        <Value>2015-04-22T20:22:04.5923217-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\head_0.xnb</Request>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\jacket_0.xnb</Request>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\pants_0.xnb</Request>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\upBodyC_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>model\kid1.FBX</Source>
+      <Name>model\kid1</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\model\kid1.xnb</Output>
+      <Time>2015-03-30T12:20:41.554785-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\model\kid1_0.xml</Key>
+        <Value>2015-04-22T20:22:04.8773377-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\26DE1CD5\kid1.fbm\CH02_01_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>model\kid10.FBX</Source>
+      <Name>model\kid10</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\model\kid10.xnb</Output>
+      <Time>2015-03-30T12:20:41.5737861-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\model\kid10_0.xml</Key>
+        <Value>2015-04-22T20:22:05.6633858-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\43351D05\kid10.fbm\CH02_10_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>model\kid11.FBX</Source>
+      <Name>model\kid11</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\model\kid11.xnb</Output>
+      <Time>2015-03-30T12:20:41.5767861-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\model\kid11_0.xml</Key>
+        <Value>2015-04-22T20:22:06.3916939-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\433A1D06\kid11.fbm\CH03_01_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>model\kid13.FBX</Source>
+      <Name>model\kid13</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\model\kid13.xnb</Output>
+      <Time>2015-03-30T12:20:41.5797867-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\model\kid13_0.xml</Key>
+        <Value>2015-04-22T20:22:07.0637327-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\43441D08\kid13.fbm\CH03_03_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>model\kid16.FBX</Source>
+      <Name>model\kid16</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\model\kid16.xnb</Output>
+      <Time>2015-03-30T12:20:41.5827874-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\model\kid16_0.xml</Key>
+        <Value>2015-04-22T20:22:07.7077685-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\43531D0B\kid16.fbm\CH03_06_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>model\kid17.FBX</Source>
+      <Name>model\kid17</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\model\kid17.xnb</Output>
+      <Time>2015-03-30T12:20:41.585788-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\model\kid17_0.xml</Key>
+        <Value>2015-04-22T20:22:08.4168092-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\43581D0C\kid17.fbm\CH03_07_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>model\kid19.FBX</Source>
+      <Name>model\kid19</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\model\kid19.xnb</Output>
+      <Time>2015-03-30T12:20:41.5887868-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\model\kid19_0.xml</Key>
+        <Value>2015-04-22T20:22:09.0758463-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\43621D0E\kid19.fbm\CH03_09_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>model\kid2.FBX</Source>
+      <Name>model\kid2</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\model\kid2.xnb</Output>
+      <Time>2015-03-30T12:20:41.5577856-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\model\kid2_0.xml</Key>
+        <Value>2015-04-22T20:22:09.7088842-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\26E31CD6\kid2.fbm\CH02_02_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>model\kid4.FBX</Source>
+      <Name>model\kid4</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\model\kid4.xnb</Output>
+      <Time>2015-03-30T12:20:41.5607856-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\model\kid4_0.xml</Key>
+        <Value>2015-04-22T20:22:10.3069205-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\26ED1CD8\kid4.fbm\CH02_04_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>model\kid7.FBX</Source>
+      <Name>model\kid7</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\model\kid7.xnb</Output>
+      <Time>2015-03-30T12:20:41.5637863-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\model\kid7_0.xml</Key>
+        <Value>2015-04-22T20:22:10.9939582-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\26FC1CDB\kid7.fbm\CH02_07_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>model\kid8.FBX</Source>
+      <Name>model\kid8</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\model\kid8.xnb</Output>
+      <Time>2015-03-30T12:20:41.5677855-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\model\kid8_0.xml</Key>
+        <Value>2015-04-22T20:22:11.7930044-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\27011CDC\kid8.fbm\CH02_08_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>model\kid9.FBX</Source>
+      <Name>model\kid9</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\model\kid9.xnb</Output>
+      <Time>2015-03-30T12:20:41.5707867-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\model\kid9_0.xml</Key>
+        <Value>2015-04-22T20:22:12.4650637-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\27061CDD\kid9.fbm\CH02_09_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>model\kid3.FBX</Source>
+      <Name>model\kid3</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\model\kid3.xnb</Output>
+      <Time>2015-03-31T18:35:43.7835048-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\model\kid3_0.xml</Key>
+        <Value>2015-04-22T20:22:13.1126628-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\26E81CD7\kid3.fbm\CH02_03_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>model\kid12.FBX</Source>
+      <Name>model\kid12</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\model\kid12.xnb</Output>
+      <Time>2015-04-06T13:42:13.4019562-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\model\kid12_0.xml</Key>
+        <Value>2015-04-22T20:22:13.6147774-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\433F1D07\kid12.fbm\CH03_02_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>model\kid14.FBX</Source>
+      <Name>model\kid14</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\model\kid14.xnb</Output>
+      <Time>2015-04-06T13:47:56.4566085-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\model\kid14_0.xml</Key>
+        <Value>2015-04-22T20:22:14.4038177-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\43491D09\kid14.fbm\CH03_04_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>model\kid15.FBX</Source>
+      <Name>model\kid15</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\model\kid15.xnb</Output>
+      <Time>2015-04-06T13:52:49.5432292-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\model\kid15_0.xml</Key>
+        <Value>2015-04-22T20:22:15.083378-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\434E1D0A\kid15.fbm\CH03_05_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>model\kid18.FBX</Source>
+      <Name>model\kid18</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\model\kid18.xnb</Output>
+      <Time>2015-04-06T14:01:34.7286959-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\model\kid18_0.xml</Key>
+        <Value>2015-04-22T20:22:15.9010565-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\435D1D0D\kid18.fbm\CH03_08_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>model\kid20.FBX</Source>
+      <Name>model\kid20</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\model\kid20.xnb</Output>
+      <Time>2015-04-06T14:07:07.1099365-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\model\kid20_0.xml</Key>
+        <Value>2015-04-22T20:22:16.7117013-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\433B1D06\kid20.fbm\CH03_10_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>model\kid6.FBX</Source>
+      <Name>model\kid6</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\model\kid6.xnb</Output>
+      <Time>2015-04-06T14:15:04.2066627-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\model\kid6_0.xml</Key>
+        <Value>2015-04-22T20:22:17.6077546-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\26F71CDA\kid6.fbm\CH02_06_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>model\kid5.FBX</Source>
+      <Name>model\kid5</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>SkinnedModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\model\kid5.xnb</Output>
+      <Time>2015-04-06T14:38:10.3636836-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\model\kid5_0.xml</Key>
+        <Value>2015-04-22T20:22:18.284813-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\26F21CD9\kid5.fbm\CH02_05_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>ChooserBackground.png</Source>
+      <Name>ChooserBackground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\ChooserBackground.xnb</Output>
+      <Time>2013-09-11T16:17:38-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Joint.png</Source>
+      <Name>Joint</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\Joint.xnb</Output>
+      <Time>2013-09-11T16:17:38-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Bone.png</Source>
+      <Name>Bone</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\Bone.xnb</Output>
+      <Time>2013-09-11T16:17:38-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Header.png</Source>
+      <Name>Header</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\Header.xnb</Output>
+      <Time>2013-09-11T16:17:38-04:00</Time>
+    </Item>
+    <Item>
+      <Source>sandbox\cafeteria.png</Source>
+      <Name>sandbox\cafeteria</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\sandbox\cafeteria.xnb</Output>
+      <Time>2015-04-22T18:40:51.646524-04:00</Time>
+    </Item>
+    <Item>
+      <Source>sandbox\classroom.png</Source>
+      <Name>sandbox\classroom</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\sandbox\classroom.xnb</Output>
+      <Time>2015-04-08T16:30:20.2409963-04:00</Time>
+    </Item>
+    <Item>
+      <Source>sandbox\library.png</Source>
+      <Name>sandbox\library</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\sandbox\library.xnb</Output>
+      <Time>2015-04-22T18:56:52.7824915-04:00</Time>
+    </Item>
+    <Item>
+      <Source>sandbox\schoolHall.png</Source>
+      <Name>sandbox\schoolHall</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\sandbox\schoolHall.xnb</Output>
+      <Time>2015-04-22T19:12:29.3971924-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Segoe16.spritefont</Source>
+      <Name>Segoe16</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\Segoe16.xnb</Output>
+      <Time>2013-09-11T16:17:38-04:00</Time>
+    </Item>
+    <Item>
+      <Source>KinectDepthVisualizer.fx</Source>
+      <Name>KinectDepthVisualizer</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\KinectDepthVisualizer.xnb</Output>
+      <Time>2013-09-11T16:17:38-04:00</Time>
+    </Item>
+    <Item>
+      <Source>dude.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\dude_0.xml</Output>
+      <Time>2013-09-11T16:17:38-04:00</Time>
+    </Item>
+    <Item>
+      <Source>head.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\head_0.xnb</Output>
+      <Time>2013-09-11T16:17:38-04:00</Time>
+    </Item>
+    <Item>
+      <Source>jacket.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\jacket_0.xnb</Output>
+      <Time>2013-09-11T16:17:38-04:00</Time>
+    </Item>
+    <Item>
+      <Source>pants.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\pants_0.xnb</Output>
+      <Time>2013-09-11T16:17:38-04:00</Time>
+    </Item>
+    <Item>
+      <Source>upBodyC.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\upBodyC_0.xnb</Output>
+      <Time>2013-09-11T16:17:38-04:00</Time>
+    </Item>
+    <Item>
+      <Source>dude1.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\dude1_0.xml</Output>
+      <Time>2014-12-09T13:18:06.8080606-05:00</Time>
+    </Item>
+    <Item>
+      <Source>model\kid1.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\model\kid1_0.xml</Output>
+      <Time>2015-03-30T12:20:41.554785-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\26DE1CD5\kid1.fbm\CH02_01.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\26DE1CD5\kid1.fbm\CH02_01_0.xnb</Output>
+      <Time>2015-04-22T20:22:04.766332-04:00</Time>
+    </Item>
+    <Item>
+      <Source>model\kid10.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\model\kid10_0.xml</Output>
+      <Time>2015-03-30T12:20:41.5737861-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\43351D05\kid10.fbm\CH02_10.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\43351D05\kid10.fbm\CH02_10_0.xnb</Output>
+      <Time>2015-04-22T20:22:05.5543803-04:00</Time>
+    </Item>
+    <Item>
+      <Source>model\kid11.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\model\kid11_0.xml</Output>
+      <Time>2015-03-30T12:20:41.5767861-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\433A1D06\kid11.fbm\CH03_01.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\433A1D06\kid11.fbm\CH03_01_0.xnb</Output>
+      <Time>2015-04-22T20:22:06.1877002-04:00</Time>
+    </Item>
+    <Item>
+      <Source>model\kid13.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\model\kid13_0.xml</Output>
+      <Time>2015-03-30T12:20:41.5797867-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\43441D08\kid13.fbm\CH03_03.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\43441D08\kid13.fbm\CH03_03_0.xnb</Output>
+      <Time>2015-04-22T20:22:06.9707459-04:00</Time>
+    </Item>
+    <Item>
+      <Source>model\kid16.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\model\kid16_0.xml</Output>
+      <Time>2015-03-30T12:20:41.5827874-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\43531D0B\kid16.fbm\CH03_06.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\43531D0B\kid16.fbm\CH03_06_0.xnb</Output>
+      <Time>2015-04-22T20:22:07.5907634-04:00</Time>
+    </Item>
+    <Item>
+      <Source>model\kid17.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\model\kid17_0.xml</Output>
+      <Time>2015-03-30T12:20:41.585788-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\43581D0C\kid17.fbm\CH03_07.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\43581D0C\kid17.fbm\CH03_07_0.xnb</Output>
+      <Time>2015-04-22T20:22:08.2988025-04:00</Time>
+    </Item>
+    <Item>
+      <Source>model\kid19.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\model\kid19_0.xml</Output>
+      <Time>2015-03-30T12:20:41.5887868-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\43621D0E\kid19.fbm\CH03_09.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\43621D0E\kid19.fbm\CH03_09_0.xnb</Output>
+      <Time>2015-04-22T20:22:08.9818621-04:00</Time>
+    </Item>
+    <Item>
+      <Source>model\kid2.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\model\kid2_0.xml</Output>
+      <Time>2015-03-30T12:20:41.5577856-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\26E31CD6\kid2.fbm\CH02_02.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\26E31CD6\kid2.fbm\CH02_02_0.xnb</Output>
+      <Time>2015-04-22T20:22:09.6018808-04:00</Time>
+    </Item>
+    <Item>
+      <Source>model\kid4.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\model\kid4_0.xml</Output>
+      <Time>2015-03-30T12:20:41.5607856-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\26ED1CD8\kid4.fbm\CH02_04.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\26ED1CD8\kid4.fbm\CH02_04_0.xnb</Output>
+      <Time>2015-04-22T20:22:10.2239136-04:00</Time>
+    </Item>
+    <Item>
+      <Source>model\kid7.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\model\kid7_0.xml</Output>
+      <Time>2015-03-30T12:20:41.5637863-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\26FC1CDB\kid7.fbm\CH02_07.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\26FC1CDB\kid7.fbm\CH02_07_0.xnb</Output>
+      <Time>2015-04-22T20:22:10.865951-04:00</Time>
+    </Item>
+    <Item>
+      <Source>model\kid8.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\model\kid8_0.xml</Output>
+      <Time>2015-03-30T12:20:41.5677855-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\27011CDC\kid8.fbm\CH02_08.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\27011CDC\kid8.fbm\CH02_08_0.xnb</Output>
+      <Time>2015-04-22T20:22:11.6809977-04:00</Time>
+    </Item>
+    <Item>
+      <Source>model\kid9.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\model\kid9_0.xml</Output>
+      <Time>2015-03-30T12:20:41.5707867-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\27061CDD\kid9.fbm\CH02_09.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\27061CDD\kid9.fbm\CH02_09_0.xnb</Output>
+      <Time>2015-04-22T20:22:12.3670386-04:00</Time>
+    </Item>
+    <Item>
+      <Source>model\kid3.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\model\kid3_0.xml</Output>
+      <Time>2015-03-31T18:35:43.7835048-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\26E81CD7\kid3.fbm\CH02_03.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\26E81CD7\kid3.fbm\CH02_03_0.xnb</Output>
+      <Time>2015-04-22T20:22:12.9976567-04:00</Time>
+    </Item>
+    <Item>
+      <Source>model\kid12.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\model\kid12_0.xml</Output>
+      <Time>2015-04-06T13:42:13.4019562-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\433F1D07\kid12.fbm\CH03_02.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\433F1D07\kid12.fbm\CH03_02_0.xnb</Output>
+      <Time>2015-04-22T20:22:13.5457594-04:00</Time>
+    </Item>
+    <Item>
+      <Source>model\kid14.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\model\kid14_0.xml</Output>
+      <Time>2015-04-06T13:47:56.4566085-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\43491D09\kid14.fbm\CH03_04.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\43491D09\kid14.fbm\CH03_04_0.xnb</Output>
+      <Time>2015-04-22T20:22:14.2498059-04:00</Time>
+    </Item>
+    <Item>
+      <Source>model\kid15.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\model\kid15_0.xml</Output>
+      <Time>2015-04-06T13:52:49.5432292-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\434E1D0A\kid15.fbm\CH03_05.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\434E1D0A\kid15.fbm\CH03_05_0.xnb</Output>
+      <Time>2015-04-22T20:22:14.9783712-04:00</Time>
+    </Item>
+    <Item>
+      <Source>model\kid18.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\model\kid18_0.xml</Output>
+      <Time>2015-04-06T14:01:34.7286959-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\435D1D0D\kid18.fbm\CH03_08.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\435D1D0D\kid18.fbm\CH03_08_0.xnb</Output>
+      <Time>2015-04-22T20:22:15.7940495-04:00</Time>
+    </Item>
+    <Item>
+      <Source>model\kid20.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\model\kid20_0.xml</Output>
+      <Time>2015-04-06T14:07:07.1099365-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\433B1D06\kid20.fbm\CH03_10.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\433B1D06\kid20.fbm\CH03_10_0.xnb</Output>
+      <Time>2015-04-22T20:22:16.589123-04:00</Time>
+    </Item>
+    <Item>
+      <Source>model\kid6.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\model\kid6_0.xml</Output>
+      <Time>2015-04-06T14:15:04.2066627-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\26F71CDA\kid6.fbm\CH02_06.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\26F71CDA\kid6.fbm\CH02_06_0.xnb</Output>
+      <Time>2015-04-22T20:22:17.4557461-04:00</Time>
+    </Item>
+    <Item>
+      <Source>model\kid5.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\model\kid5_0.xml</Output>
+      <Time>2015-04-06T14:38:10.3636836-04:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\26F21CD9\kid5.fbm\CH02_05.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\FBX\26F21CD9\kid5.fbm\CH02_05_0.xnb</Output>
+      <Time>2015-04-22T20:22:18.1937884-04:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\school\Desktop\Avateering-XNA\Avateering\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\school\Desktop\Avateering-XNA\Avateering\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\school\Desktop\Avateering-XNA\Avateering\Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\school\Desktop\Avateering-XNA\Avateering\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Users\school\Desktop\Avateering-XNA\SkinnedModelPipeline\bin\x86\Debug\SkinnedModelPipeline.dll</Key>
+        <Value>2015-04-22T20:21:52.4601516-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-11-22T00:37:42.4597306-05:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

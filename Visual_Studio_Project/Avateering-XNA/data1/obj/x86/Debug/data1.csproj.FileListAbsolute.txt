@@ -1,0 +1,6 @@
+C:\Users\school\Desktop\Avateering-XNA\data1\obj\x86\Debug\data1.Properties.Resources.resources
+C:\Users\school\Desktop\Avateering-XNA\data1\obj\x86\Debug\data1.csproj.GenerateResource.Cache
+C:\Users\school\Desktop\Avateering-XNA\data1\bin\Debug\data1.exe
+C:\Users\school\Desktop\Avateering-XNA\data1\bin\Debug\data1.pdb
+C:\Users\school\Desktop\Avateering-XNA\data1\obj\x86\Debug\data1.exe
+C:\Users\school\Desktop\Avateering-XNA\data1\obj\x86\Debug\data1.pdb

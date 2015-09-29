@@ -1,0 +1,526 @@
+﻿<Window x:Class="Microsoft.Samples.Kinect.ControlsBasics.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:k="http://schemas.microsoft.com/kinect/2013"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Microsoft.Samples.Kinect.ControlsBasics"
+        Name="ControlsBasicsWindow"
+        Title="Menu Project"
+        Closing="WindowClosing"
+        mc:Ignorable="d"
+        d:DesignWidth="1200"
+        d:DesignHeight="700"
+        MinWidth="500"
+        MinHeight="700"
+          WindowStyle="None"
+         FontFamily="Segoe UI"
+        >
+
+    <Window.Resources>
+        <PathGeometry x:Key="ChevronGeometry" x:Shared="False">
+            F1M150.001,146.9932L126.565,169.3822L126.565,153.5962L150.001,130.6182L173.435,153.5962L173.435,169.3822z
+        </PathGeometry>
+
+        <Path x:Key="ChevronUp" Height="48" Width="48" Stretch="Uniform" Canvas.Top="0" x:Shared="False"
+          Data="{StaticResource ChevronGeometry}"
+          Fill="{Binding FallbackValue=Black, Path=Foreground,RelativeSource={RelativeSource AncestorType={x:Type local:KinectHoverButton}}}">
+            <Path.RenderTransformOrigin>0.5,0.5</Path.RenderTransformOrigin>
+            <Path.RenderTransform>
+                <RotateTransform Angle="0"/>
+            </Path.RenderTransform>
+        </Path>
+
+        <Path x:Key="ChevronRight" Height="48" Width="48" Stretch="Uniform" Canvas.Top="0" x:Shared="False"
+          Data="{StaticResource ChevronGeometry}"
+          Fill="{Binding FallbackValue=Black, Path=Foreground,RelativeSource={RelativeSource AncestorType={x:Type local:KinectHoverButton}}}">
+            <Path.RenderTransformOrigin>0.5,0.5</Path.RenderTransformOrigin>
+            <Path.RenderTransform>
+                <RotateTransform Angle="90"/>
+            </Path.RenderTransform>
+        </Path>
+
+        <Path x:Key="ChevronDown" Height="48" Width="48" Stretch="Uniform" Canvas.Top="0" x:Shared="False"
+          Data="{StaticResource ChevronGeometry}"
+          Fill="{Binding FallbackValue=Black, Path=Foreground,RelativeSource={RelativeSource AncestorType={x:Type local:KinectHoverButton}}}">
+            <Path.RenderTransformOrigin>0.5,0.5</Path.RenderTransformOrigin>
+            <Path.RenderTransform>
+                <RotateTransform Angle="180"/>
+            </Path.RenderTransform>
+        </Path>
+
+        <Path x:Key="ChevronLeft" Height="48" Width="48" Stretch="Uniform" Canvas.Top="0" x:Shared="False"
+          Data="{StaticResource ChevronGeometry}"
+          Fill="{Binding FallbackValue=Black, Path=Foreground,RelativeSource={RelativeSource AncestorType={x:Type local:KinectHoverButton}}}">
+            <Path.RenderTransformOrigin>0.5,0.5</Path.RenderTransformOrigin>
+            <Path.RenderTransform>
+                <RotateTransform Angle="270"/>
+            </Path.RenderTransform>
+        </Path>
+        
+        <Style TargetType="{x:Type k:KinectTileButton}">
+            <Style.Triggers>
+                <EventTrigger>
+                    <EventTrigger.RoutedEvent>k:KinectRegion.HandPointerEnter</EventTrigger.RoutedEvent>
+                    <SoundPlayerAction Source="sounds/button-enter.wav" />
+                </EventTrigger>
+                <EventTrigger RoutedEvent="Button.MouseEnter">
+                    <SoundPlayerAction Source="sounds/button-enter.wav" />
+                </EventTrigger>
+                <EventTrigger RoutedEvent="Button.Click">
+                    <SoundPlayerAction Source="sounds/button-select.wav" />
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+
+
+        <Style x:Key="KinectHoverButtonStyle" TargetType="{x:Type local:KinectHoverButton}">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="0"></Setter>
+            <Setter Property="Foreground" Value="Transparent"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type local:KinectHoverButton}">
+                        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="{TemplateBinding Background}" Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">
+                            <Border BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}">
+                                <ContentPresenter HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Content="{TemplateBinding Content}"></ContentPresenter>
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Foreground" Value="LightGray"/>
+                    <Setter Property="BorderBrush" Value="LightGray"/>
+                    <Setter Property="Background" Value="Transparent"></Setter>
+                </Trigger>
+                <Trigger Property="IsHandPointerOver" Value="True">
+                    <Setter Property="Background" Value="#5A5B5B"/>
+                    <Setter Property="Foreground" Value="White"/>
+                   
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="KinectHoverButtonScrollUpStyle" TargetType="{x:Type local:KinectHoverButton}" BasedOn="{StaticResource KinectHoverButtonStyle}">
+            <Setter Property="Content" Value="{StaticResource ChevronUp}"/>
+        </Style>
+
+        <Style x:Key="KinectHoverButtonScrollRightStyle" TargetType="{x:Type local:KinectHoverButton}" BasedOn="{StaticResource KinectHoverButtonStyle}">
+            <Setter Property="Content" Value="{StaticResource ChevronRight}"/>
+        </Style>
+
+        <Style x:Key="KinectHoverButtonScrollDownStyle" TargetType="{x:Type local:KinectHoverButton}" BasedOn="{StaticResource KinectHoverButtonStyle}">
+            <Setter Property="Content" Value="{StaticResource ChevronDown}"/>
+        </Style>
+
+        <Style x:Key="KinectHoverButtonScrollLeftStyle" TargetType="{x:Type local:KinectHoverButton}" BasedOn="{StaticResource KinectHoverButtonStyle}">
+            <Setter Property="Content" Value="{StaticResource ChevronLeft}"/>
+        </Style>
+
+        
+
+
+    </Window.Resources>
+
+    
+    
+    <Grid Background="#c8f1e0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Name="checkBox3"  Width="1200" Height="700" Grid.Row="1" Background="Transparent">
+            <Image Name="image3"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </Grid>
+
+        <Grid Grid.Row="0"  Margin="10 0 10 20">
+            <Image HorizontalAlignment="Left" VerticalAlignment="Bottom" Source="Images\logo.png" Stretch="None" Margin="0 0 0 4"/>
+            <k:KinectUserViewer k:KinectRegion.KinectRegion="{Binding ElementName=kinectRegion}" Height="100" HorizontalAlignment="Right" VerticalAlignment="Top" />
+            <k:KinectSensorChooserUI HorizontalAlignment="Right" VerticalAlignment="Top" Name="sensorChooserUi" />     
+            <TextBlock HorizontalAlignment="Center" Margin="0 0 -1 0" VerticalAlignment="Center" Foreground="#0878ad"  FontWeight="ExtraBold" FontSize="58" FontStyle="Italic">Avatar Selection</TextBlock>
+        
+            
+            </Grid>
+
+
+
+        
+
+
+        <k:KinectRegion Grid.Row="1" x:Name="kinectRegion" >
+
+            
+
+            <Grid x:Name="kinectRegionGrid" Margin="10,20,10,20">
+                
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="430*" />
+                    <ColumnDefinition Width="728*" />
+                    
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="190*" />
+                    <RowDefinition Height="163*" />
+                    <RowDefinition Height="28*" />
+                    <RowDefinition Height="73" />
+                    <RowDefinition Height="37" />
+                    <RowDefinition Height="10" />
+                </Grid.RowDefinitions>
+
+
+
+
+              
+
+
+                <k:KinectScrollViewer Name="scrollViewer11" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Disabled" Height="150" VerticalAlignment="Top" Margin="300,0" Grid.ColumnSpan="2" Background="Transparent">
+                    <WrapPanel VerticalAlignment="Center" x:Name="wrapPanel" Orientation="Vertical" k:KinectTileButton.Click="KinectTileButtonClick" Height="150" >
+                        <!-- items for design layout.  They will be replaced at runtime. -->
+                        <k:KinectTileButton Height="150" Width="150" Name="Willie" >
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid1.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+                        
+                        <k:KinectTileButton Height="150" Width="150" Name="Jake">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid2.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+                        
+                       
+                        
+                       
+                        
+                        <k:KinectTileButton Height="150" Width="150" Name="Darnell">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid4.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+                        <k:KinectTileButton Height="150" Width="150" Name="Scott">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid5.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+                        <k:KinectTileButton Height="150" Width="150" Name="Kelly">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid6.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+                        <k:KinectTileButton Height="150" Width="150" Name="Jada">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid7.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+                        <k:KinectTileButton Height="150" Width="150" Name="Maria">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid8.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+                        <k:KinectTileButton Height="150" Width="150" Name="Emma">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid9.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+                        <k:KinectTileButton Height="150" Width="150" Name="Jenna">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid10.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+                        <k:KinectTileButton Height="150" Width="150" Name="David">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid11.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+                        <k:KinectTileButton Height="150" Width="150" Name="Ariel">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid12.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+
+
+                        <k:KinectTileButton Height="150" Width="150" Name="Darryl">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid13.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+                        <k:KinectTileButton Height="150" Width="150" Name="Fred">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid14.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+
+                        <k:KinectTileButton Height="150" Width="150" Name="John">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid15.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+
+
+
+                        <k:KinectTileButton Height="150" Width="150" Name="Tierra">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid16.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+                        <k:KinectTileButton Height="150" Width="150" Name="Caitlin">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid17.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+                        <k:KinectTileButton Height="150" Width="150" Name="Lisa">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid18.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+                        <k:KinectTileButton Height="150" Width="150" Name="Ju">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid19.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+
+                        <k:KinectTileButton Height="150" Width="150" Name="Anita">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid20.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+
+
+                    </WrapPanel>
+                </k:KinectScrollViewer>
+
+                <k:KinectScrollViewer Name="scrollViewer1" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Disabled" Height="150" VerticalAlignment="Center" Margin="300,151,300,52" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="Transparent">
+                    <WrapPanel VerticalAlignment="Center" x:Name="wrapPanel1" Orientation="Vertical" k:KinectTileButton.Click="KinectTileButtonClick1" Height="150" >
+
+                        <k:KinectTileButton Height="150" Width="150" Name="Willie1">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid1.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+                        <k:KinectTileButton Height="150" Width="150"    Name="Jake1">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid2.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+
+
+                        
+
+                        <k:KinectTileButton Height="150" Width="150" Name="Darnell1">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid4.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+                        <k:KinectTileButton Height="150" Width="150" Name="Scott1">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid5.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+                        <k:KinectTileButton Height="150" Width="150" Name="Kelly1">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid6.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+                        <k:KinectTileButton Height="150" Width="150" Name="Jada1">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid7.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+                        <k:KinectTileButton Height="150" Width="150" Name="Maria1">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid8.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+                        <k:KinectTileButton Height="150" Width="150" Name="Emma1">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid9.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+                        <k:KinectTileButton Height="150" Width="150" Name="Jenna1">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid10.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+                        <k:KinectTileButton Height="150" Width="150" Name="David1">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid11.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+                        <k:KinectTileButton Height="150" Width="150" Name="Ariel1">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid12.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+
+
+                        <k:KinectTileButton Height="150" Width="150" Name="Darryl1">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid13.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+                        <k:KinectTileButton Height="150" Width="150" Name="Fred1">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid14.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+
+                        <k:KinectTileButton Height="150" Width="150" Name="John1">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid15.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+
+
+
+                        <k:KinectTileButton Height="150" Width="150" Name="Tierra1">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid16.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+                        <k:KinectTileButton Height="150" Width="150" Name="Caitlin1">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid17.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+                        <k:KinectTileButton Height="150" Width="150" Name="Lisa1">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid18.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+                        <k:KinectTileButton Height="150" Width="150" Name="Ju1">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid19.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+
+                        <k:KinectTileButton Height="150" Width="150" Name="Anita1">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="avatars/faces/kid20.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+                    </WrapPanel>
+                </k:KinectScrollViewer>
+
+                <k:KinectScrollViewer Grid.Row="1" Name="scrollViewer3" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Disabled" Height="130" VerticalAlignment="Center" Margin="300,111,300,23" Grid.RowSpan="3" Grid.ColumnSpan="2">
+                    <WrapPanel VerticalAlignment="Center" x:Name="wrapPanel2" Orientation="Vertical" k:KinectTileButton.Click="KinectTileButtonClick2" Height="130" >
+                        <!-- items for design layout.  They will be replaced at runtime. -->
+                        <k:KinectTileButton Height="130" Width="300" Label="School Hall">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="scenario/schoolHall.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+                        <k:KinectTileButton Height="130" Width="300" Label="Library">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="scenario/library.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+
+                        
+
+                        <k:KinectTileButton Height="130" Width="300" Label="Cafeteria">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="scenario/cafeteria.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                        </k:KinectTileButton>
+                    </WrapPanel>
+                </k:KinectScrollViewer>
+                
+                <k:KinectScrollViewer Grid.Row="1" Name="scrollViewer33" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Disabled" Height="74" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.RowSpan="3" Grid.ColumnSpan="2" Margin="49,0">
+                    <WrapPanel VerticalAlignment="Center" x:Name="wrapPanel3" Orientation="Vertical" k:KinectTileButton.Click="KinectTileButtonClick3" Height="70" Width="100"  HorizontalAlignment="Center">
+                        <!-- items for design layout.  They will be replaced at runtime. -->
+                        <k:KinectTileButton Height="70" Width="100"   BorderThickness="0" Click="PageRightButtonClick" IsEnabled="{Binding ElementName=ControlsBasicsWindow, Path=PageRightEnabled}"  Label="">
+                            <k:KinectTileButton.Background>
+                                <ImageBrush ImageSource="Images/PlayButton.png" AlignmentX="Right" ></ImageBrush>
+                            </k:KinectTileButton.Background>
+                            
+                        </k:KinectTileButton>
+                           
+                   
+
+                    </WrapPanel>
+                </k:KinectScrollViewer>
+
+
+
+
+
+
+            </Grid>
+            
+        </k:KinectRegion>
+        
+            <k:KinectRegion Grid.Row="1" HorizontalAlignment="Left" Margin="0 0 0 0" BorderThickness="0" Height="500" Width="270" >
+
+            <ListView BorderThickness="0" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Transparent" Background="Transparent">
+
+                <Grid Name="checkBox1"  Margin="5" Grid.Row="1">
+                    <Image Name="image1"  Width="240" Height="360" Stretch="Fill"/>
+                </Grid>
+
+              
+                
+
+
+            </ListView>
+
+
+            
+
+
+
+        </k:KinectRegion>
+
+
+
+
+        <k:KinectRegion Grid.Row="1" HorizontalAlignment="Right" Margin="50 20 0 0" BorderThickness="0" Height="500" Width="270" Background="Transparent" >
+
+            <ListView BorderThickness="0" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Transparent" Background="Transparent">
+
+                <Grid Name="checkBox2"  Background="Transparent" Margin="5" Grid.Row="1">
+                    <Image Name="image2" Width="240" Height="360"  Stretch="Fill"/>
+                </Grid>
+
+
+            </ListView>
+
+
+
+
+
+
+        </k:KinectRegion>
+
+
+
+    </Grid>
+</Window>

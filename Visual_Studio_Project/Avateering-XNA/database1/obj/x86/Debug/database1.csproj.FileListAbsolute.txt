@@ -1,0 +1,16 @@
+C:\Users\school\Desktop\Avateering-XNA\database1\bin\Debug\database1.exe.manifest
+C:\Users\school\Desktop\Avateering-XNA\database1\bin\Debug\database1.application
+C:\Users\school\Desktop\Avateering-XNA\database1\bin\Debug\database1.exe
+C:\Users\school\Desktop\Avateering-XNA\database1\bin\Debug\database1.pdb
+C:\Users\school\Desktop\Avateering-XNA\database1\obj\x86\Debug\MainWindow.baml
+C:\Users\school\Desktop\Avateering-XNA\database1\obj\x86\Debug\MainWindow.g.cs
+C:\Users\school\Desktop\Avateering-XNA\database1\obj\x86\Debug\App.g.cs
+C:\Users\school\Desktop\Avateering-XNA\database1\obj\x86\Debug\database1_MarkupCompile.cache
+C:\Users\school\Desktop\Avateering-XNA\database1\obj\x86\Debug\database1.g.resources
+C:\Users\school\Desktop\Avateering-XNA\database1\obj\x86\Debug\database1.Properties.Resources.resources
+C:\Users\school\Desktop\Avateering-XNA\database1\obj\x86\Debug\database1.csproj.GenerateResource.Cache
+C:\Users\school\Desktop\Avateering-XNA\database1\obj\x86\Debug\database1.TrustInfo.xml
+C:\Users\school\Desktop\Avateering-XNA\database1\obj\x86\Debug\database1.exe.manifest
+C:\Users\school\Desktop\Avateering-XNA\database1\obj\x86\Debug\database1.application
+C:\Users\school\Desktop\Avateering-XNA\database1\obj\x86\Debug\database1.exe
+C:\Users\school\Desktop\Avateering-XNA\database1\obj\x86\Debug\database1.pdb
